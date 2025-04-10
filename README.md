@@ -1,4 +1,5 @@
 # Project: Leveraging LLMs for Curriculum Scheduling in Noisy or Multi-Objective Learning
+![Status](https://img.shields.io/badge/status-in%20progress-yellow)
 
 This repository was developed using methodologies suggested by the ChatGPT (OpenAI, 2025) and DeepSeek (DeepSeek, 2024) language models.
 
@@ -22,20 +23,20 @@ By automating the selection and ordering of training samples, and/or adaptively 
 
 1. **LLM-Guided Curriculum for hyperparameter tuning**
    - Train the model  (e.g., logistic regression, SVM, shallow neural network) with default hyperparameters.
-   - Usa a language model (e.g., GPT-4, Claude, or open-source LLMs like Llama-3) as an **LLM Backend** to analyze metrics and propose hyperparameters.
+   - Use a language model (e.g., GPT-4, Claude, or open-source LLMs like Llama-3) as an **LLM Backend** to analyze metrics and propose hyperparameters.
    - **Orchestrator**: Manages the training loop, feeds data to the LLM, and applies hyperparameters.
    - **Tracking**: Tools like Weights & Biases, MLflow, or TensorBoard to log metrics.
 
-3. **LLM-Guided Curriculum for Noisy Classification**  
+2. **LLM-Guided Curriculum for Noisy Classification**  
    - Use an LLM (e.g., GPT-4) to rank CIFAR-10N samples by label confidence or semantic clarity.
    - Build a simple ResNet and compare training with/without LLM-informed curriculum scheduling.
    - Alternative: use a sample weighting scheme learned via LLM analysis.
 
-4. **Adaptive Loss Weighting in Multi-objective Training**  
+3. **Adaptive Loss Weighting in Multi-objective Training**  
    - In a model with multiple loss components (e.g., PINN, reconstruction + classification, vision + text analysis), ask the LLM to suggest a dynamic weighting strategy.
    - Evaluate convergence speed and final performance versus static weights or heuristic schedules.
 
-5. **LLM as Meta-Optimizer Assistant**  
+4. **LLM as Meta-Optimizer Assistant**  
    - Use LLM to suggest learning rate schedules, batch composition strategies, or fine-tuning sequences based on real-time logs (loss curves, validation error).
    - Compare against standard strategies like cosine annealing or ReduceLROnPlateau.
 
@@ -54,7 +55,7 @@ Publication of a short research article or position paper (~4 pages) at a [NeurI
 
 - [CIFAR-10N (label noise version)](https://paperswithcode.com/dataset/cifar-10n)
 - [COCO](https://cocodataset.org/#home)
-- PINN models are dataset free (usa a simple pinn model of a pendulum)
+- PINN models don't use standard datasets; instead, they solve differential equations. A simple use-case is simulating the motion of a pendulum or diffusion across a rod.
 
 ## Tools & Libraries
 
