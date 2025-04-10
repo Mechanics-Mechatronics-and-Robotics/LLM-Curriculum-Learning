@@ -1,5 +1,5 @@
 # Project: Leveraging LLMs for Curriculum Scheduling in Noisy or Multi-Objective Learning
-![Status](https://img.shields.io/badge/status-in%20progress-yellow)
+![Status](https://img.shields.io/badge/status-a%20proposal-yellow)
 
 This repository was developed using methodologies suggested by the ChatGPT (OpenAI, 2025) and DeepSeek (DeepSeek, 2024) language models.
 
