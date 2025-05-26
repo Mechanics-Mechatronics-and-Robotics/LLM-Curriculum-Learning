@@ -70,4 +70,5 @@ Publication of a short research article or position paper (~4 pages) at a [NeurI
 - Swayamdipta et al. (2020), *Dataset Cartography*: https://arxiv.org/abs/2009.10795
 - Hadi Pouransari et al. (2024), *Dataset Decomposition: Faster LLM Training with Variable Sequence Length Curriculum*: https://arxiv.org/abs/2405.13226
 - Xiaoyin Chen et al. (2025), Self-Evolving Curriculum for LLM Reasoning: https://arxiv.org/abs/2505.14970
+- Lu Lu et al. (2021), DeepXDE: A Deep Learning Library for Solving Differential Equations: https://github.com/lululxvi/deepxde
  
